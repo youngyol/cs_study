@@ -18,9 +18,10 @@
 #### JSP 동작원리 
 
 - 클라이언트가 웹브라우저로 helloWorld.jsp를 요청하게 되면 JSP컨테이너가 JSP파일을 Servlet파일(.java)로 변환
-- Servlet파일(.java)은컴파일 된 후 클래스 파일(.class)로변환되고, 요청한클라이언트한테 html파일형태로 응답
 
+- Servlet파일(.java)은컴파일 된 후 클래스 파일(.class)로변환되고, 요청한클라이언트한테 html파일형태로 응
 
+  ![Alt text](/img/JSP001.PNG)
 
 #### JSP 내부객체
 
@@ -32,4 +33,47 @@
 - 서블릿객체 : page, config
 - 세션 객체: session
 - 예외 객체: exception
+
+
+
+#### 지시자
+
+- page : 해당 페이지의 전체적인 속성 지정
+- include : 별도의 페이지를 현재 페이지에 삽입
+- taglib : 태그라이브러리의태그 사용 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### 예외처리
+
+- page 지시자를 통한 예외처리
+
+  ```jsp
+  <%@ page  errorPage = "errorPage.jsp" %> // 해당 페이지내에서 예외 발생시 errorPage.jsp로 이동
+  ```
+
+  아래는 errorPage.jsp
+
+  ```jsp
+  <%@ page isErrorPage = "true" %> // 기본값이 false이므로 에러페이지로 사용하려면 true로 바꿔줘야함
+
+  그래야 아래와 같은 exception객체를 사용가능
+  <%= exception.getMessage() %>
+  ```
+
+  ​
 
