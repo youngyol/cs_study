@@ -353,3 +353,13 @@ Runnable 인터페이스는 run 메소드를 구현하도록 강제한다.
 > 클래스의 인스턴스와 배열이 저장되는 공간입니다. 프로그램 중 생성된 인스턴스는 모두 이곳에 저장됩니다. 인스턴스 변수도 생성됩니다.
 
  
+
+
+
+#### 객체지향  설계 원칙(SOLID)
+
+- SRP(The Single Responsibility Principle) : 단일 책임 원칙
+- OCP(The Open Closed Principle) : 개방 폐쇄 원칙
+- LSP(The Liskov Substitution Principle) : 리스코프 치환 원칙
+- ISP(The Interface Segregation Principle) : 인터페이스 분리 원칙
+- DIP(The Dependency Inversion Principle) : 의존관계 역전 원칙  
