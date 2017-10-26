@@ -359,7 +359,13 @@ Runnable 인터페이스는 run 메소드를 구현하도록 강제한다.
 #### 객체지향  설계 원칙(SOLID)
 
 - SRP(The Single Responsibility Principle) : 단일 책임 원칙
+
 - OCP(The Open Closed Principle) : 개방 폐쇄 원칙
+
+  > 클래스나 모듈은 확장에는 열려 있어야 하고 변경에는 닫혀 있어야 한다. 
+
 - LSP(The Liskov Substitution Principle) : 리스코프 치환 원칙
+
 - ISP(The Interface Segregation Principle) : 인터페이스 분리 원칙
+
 - DIP(The Dependency Inversion Principle) : 의존관계 역전 원칙  
