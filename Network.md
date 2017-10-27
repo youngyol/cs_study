@@ -6,7 +6,7 @@
 
 ​    Layering하는 이유 : 복잡한 시스템을 기능 별로 단순화함<br/>
 
-![Alt text](osi7.png)
+![Alt text](/img/osi7.png)
 
 1. 물리 계층 : 
 2. 데이터링크 계층 :
