@@ -2,6 +2,14 @@
 
 
 
+#### Upcasting, Downcasting , instanceof
+
+[참고](http://blog.naver.com/susieredrum/150138374347)
+
+[참고](http://blog.naver.com/madplay/220514611875)
+
+
+
 #### 동등성(equals) 동일성(==)
 
 ```java
