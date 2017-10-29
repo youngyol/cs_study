@@ -74,19 +74,19 @@ s3은 heap 메모리에 개별 객체가 만들어짐
 
 #### String, StringBuffer, StringBuilder의 차이점
 
-   ① String         클래스 : 상수 문자열, 한번 생성한 후 변하지 않는 문자열 용도. // 불가변
+   ① String         클래스 : 상수 문자열, 한번 생성한 후 변하지 않는 문자열 용도. // 불가변<br/>
 
-   ② StringBuffer  클래스 : 프로그램 내에서 계속 변하는 문자열 용도.
+   ② StringBuffer  클래스 : 프로그램 내에서 계속 변하는 문자열 용도. <br/>
 
-   ③ StringBuilder 클래스 : Java5에 추가된 클래스로 StringBuffer와 기능이 같다.
+   ③ StringBuilder 클래스 : Java5에 추가된 클래스로 StringBuffer와 기능이 같다. <br/>
 
-​    * 차이점 : StringBuffer는 동기화(synchronized)되지만 StringBuilder는 그렇지 않다.
+* 차이점 : StringBuffer는 동기화(synchronized)되지만 StringBuilder는 그렇지 않다.<br/>
 
 ​                즉, StringBuilder는 다중 thread에서는 안전하지 않으므로 동기화가 필요한 경우는
 
-​                StringBuffer를 사용하는 것이 좋다.
+​                StringBuffer를 사용하는 것이 좋다.<br/>
 
-​                StringBuilder에서 동기화 하려면 synchronized블록으로 감싸야 한다.
+​                StringBuilder에서 동기화 하려면 synchronized블록으로 감싸야 한다.<br/>
 
 
 
