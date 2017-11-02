@@ -35,7 +35,7 @@ System.out.println(str1 == temp);  // false
 
 
 **동등성**: 동등하다! 두 오브젝트가 같은 정보(내용)를 갖고 있을 경우를 의미합니다. 
-[출처](http://blog.naver.com/PostView.nhn?blogId=zxcvb4825&logNo=220826548072&redirect=Dlog&widgetTypeCall=true)
+[출처](http://blog.naver.com/PostView.nhn?blogId=zxcvb4825&logNo=220826548072&redirect=Dlog&widgetTypeCall=true)<br/>
 
 
 
@@ -66,7 +66,7 @@ public class StringPool {
 
 s1은 string constant pool에 객체가 만들어짐, s2은 이 string pool에 존재하는 Cat를 참조함.
 
-s3은 heap 메모리에 개별 객체가 만들어짐
+s3은 heap 메모리에 개별 객체가 만들어짐<br/>
 
 
 
@@ -102,7 +102,7 @@ s3은 heap 메모리에 개별 객체가 만들어짐
 
    ④ 상속(inheritance)   : 기존에 있던 클래스(즉, 기존의 클래스로부터 상속받은)를 바탕으로 다른 특성을 추가해 새로운 클래스를 만들 수 있음.
 
-   ⑤ 인스턴스(Instance)  : 인스턴스는 추상화 개념 또는 클래스 객체, 컴퓨터 프로세스 등과 같은 템플릿(무엇인가를 만들 때 안내 역할 하는 데 사용되는 형식, 꼴, 틀 또는 모형 등을 의미)이 실제로 구현된 것
+   ⑤ 인스턴스(Instance)  : 인스턴스는 추상화 개념 또는 클래스 객체, 컴퓨터 프로세스 등과 같은 템플릿(무엇인가를 만들 때 안내 역할 하는 데 사용되는 형식, 꼴, 틀 또는 모형 등을 의미)이 실제로 구현된 것<br/>
 
 
 
@@ -122,7 +122,7 @@ s3은 heap 메모리에 개별 객체가 만들어짐
 
 ​        즉 하위 클래스에서 method를 재정의하는 것.
 
-​        주로 생성자 method를 정의할 때 많이 사용.
+​        주로 생성자 method를 정의할 때 많이 사용. <br/>
 
 
 
@@ -143,7 +143,7 @@ Young과 Old영역 존재
 
 [더보기](http://itmining.tistory.com/24)
 
-
+<br/><br/>
 
 
 
@@ -170,7 +170,7 @@ Young과 Old영역 존재
 
     ​
 
-[더보기 ](http://withwani.tistory.com/150)
+[더보기 ](http://withwani.tistory.com/150)<br/>
 
 #### Collection
 
@@ -193,11 +193,15 @@ Young과 Old영역 존재
 - Map : 인터페이스, 중복된 키를 포함하지 않음, Key-value페어, Map으로 구현한것 (HashMap, TreeMap, LinkedHashMap)
   - HashMap
   - TreeMap
-  - LinkedHashMap
+  - LinkedHashMap<br/><br/>
 
 #### 제네릭스(Generics)란?
 
- 클래스 내부에서 사용할 데이터 타입을 나중에 인스턴스를 생성할 때 확정하는 것을 제네릭이라 한다.
+> 클래스 내부에서 사용할 데이터 타입을 나중에 인스턴스를 생성할 때 확정하는 것을 제네릭이라 한다. 
+>
+> 다양한 타입의 객체들을 다루는 메서드나 컬렉션 클래스에 컴파일 시의 타입체크를 해주는 기능.
+>
+> 객체의 타입을 컴파일 시에 체크하기 때문에 객체의 타입 안전성을 높이고 형변환의 번거로움이 줄어든다.
 
 ``` java
 class Person<T>{
@@ -212,9 +216,7 @@ public class GenericDemo {
 }
 ```
 
-
-
-
+- 장점 : 타입 안전성을 제공, 타입체크와 형변환을 생략할 수 있으므로 코드가 간결
 
 #### Thread
 
@@ -318,7 +320,7 @@ Runnable 인터페이스는 run 메소드를 구현하도록 강제한다.
 
 [더보기](https://wikidocs.net/230)
 
-
+<br/>
 
 
 
@@ -344,7 +346,7 @@ Runnable 인터페이스는 run 메소드를 구현하도록 강제한다.
 
 
 
-
+<br/><br/>
 
 #### JVM 메모리 구조 
 
@@ -362,7 +364,7 @@ Runnable 인터페이스는 run 메소드를 구현하도록 강제한다.
 
  
 
-
+<br/><br/>
 
 #### 객체지향  설계 원칙(SOLID)
 
@@ -377,3 +379,5 @@ Runnable 인터페이스는 run 메소드를 구현하도록 강제한다.
 - ISP(The Interface Segregation Principle) : 인터페이스 분리 원칙
 
 - DIP(The Dependency Inversion Principle) : 의존관계 역전 원칙  
+
+<br/>
