@@ -218,6 +218,20 @@ public class GenericDemo {
 
 - 장점 : 타입 안전성을 제공, 타입체크와 형변환을 생략할 수 있으므로 코드가 간결
 
+
+
+
+
+
+
+#### Comparator와 Comparable
+
+- Comparator :  
+
+- Comparable :
+
+  ​
+
 #### Thread
 
 1. Thread 클래스 상속
