@@ -9,6 +9,7 @@
 ![Alt text](./Img/osi7.png)
 
 1. 물리 계층 : 
+   - 디지털 --> 아날로그
 2. 데이터링크 계층 :
    - 물리적인 네트워크 장비를 일대일(Point to Point)로 신뢰성 있는 통신을 보장하기 위한 명세를 정의
 3. 네트워크 계층
@@ -21,6 +22,16 @@
 ### Socket
 
 - soket 은 소프트웨어 인터페이스
+
+
+
+
+
+
+#### Addressing processes
+
+>  identifier includes both **IP address** and **port numbers** associated with process on host.
+
 
 
 #### ARP(Address Resolution Protocol)
@@ -43,9 +54,30 @@
 
 
 
-#### TCP UDP
+#### TCP vs UDP
 
 ![Alt text](/Img/tcp%20udp.png)
+
+- TCP
+  - 신뢰성있는 통신
+  - 연결 중심
+- UDP
+  - 신뢰성없는 통신
+
+
+
+#### HTTP
+
+- TCP사용
+- 연결방법
+  - non-persistent HTTP
+    - HTTP1.0에서 사용
+  - persistent HTTP
+    - HTTP1.1에서 사용
+
+
+
+#### Cookie vs Session
 
 
 
