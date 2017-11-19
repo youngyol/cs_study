@@ -19,37 +19,9 @@
 6. 표현 계층
 7. 응용 계층
 
-### Socket
+####Socket
 
 - soket 은 소프트웨어 인터페이스
-
-
-
-
-
-
-#### Addressing processes
-
->  identifier includes both **IP address** and **port numbers** associated with process on host.
-
-
-
-#### ARP(Address Resolution Protocol)
-
-- IP주소 기반으로 MAC주소를 알아오는 프로토콜
-- 주소 결정 프로토콜, 네트워크 상에서 IP 주소와 MAC 주소를 매핑하기 위해서 사용한다.
-
-
-- ARP는 요청과 응답으로 구성된 프로토콜로 "라우팅되지 않는" 단일 네트워크에서만 작동하는 프로토콜이다. OSI7 계층의 2 계층 프로토콜로 볼 수 있겠는데, IP와 MAC 주소를 캡슐화하기 때문에 L2와 L3 사이에 있는 프로토콜로 묘사하기도 한다. 어쨋거나 ARP는 OSI 프레임워크에서 개발하는 프로토콜은 아니다.
-
-  [참고](https://www.joinc.co.kr/w/man/12/ARP)
-
-
-
-#### DHCP
-
-​	
-
 
 
 
@@ -63,6 +35,9 @@
   - 연결 중심
 - UDP
   - 신뢰성없는 통신
+  - connectionless
+  - 예 : streaming multimedia apps (loss tolerant, rate sensitive), DNS
+  - 왜? 빠름, 단순(커넥션 맺는 과정이 없으므로), Lightweight(헤더 사이즈가 작음, Congestion/flow control없음 )
 
 
 
@@ -81,6 +56,8 @@
 
 
 
+
+
 #### 신뢰성 있는 UDP 통신
 
 순서를 보장하는 방법은 패킷에 번호를 붙이고, 번호순서대로 패킷이 도착할때까지 기다렸다가 패킷이 모두 모이면 그때 패킷을 풀면됩니다. <br/>
@@ -91,3 +68,33 @@
 
 무결성을 보장하는 방법은 체크섬을 통해서, 데이터가 손실되지 않았는지 검증합니다.<br/>
 
+
+
+
+
+####DNS
+
+> Domain Name System, </br>
+>
+> **distributed database** implemented in hierarchy of many name servers <br/>
+> **application-layer protocol:** hosts, name servers employ DNS to translate host names into IP addresses
+
+#### Addressing processes
+
+>  identifier includes both **IP address** and **port numbers** associated with process on host.
+
+
+
+#### ARP(Address Resolution Protocol)
+
+- IP주소 기반으로 MAC주소를 알아오는 프로토콜
+- 주소 결정 프로토콜, 네트워크 상에서 IP 주소와 MAC 주소를 매핑하기 위해서 사용한다.
+
+
+- ARP는 요청과 응답으로 구성된 프로토콜로 "라우팅되지 않는" 단일 네트워크에서만 작동하는 프로토콜이다. OSI7 계층의 2 계층 프로토콜로 볼 수 있겠는데, IP와 MAC 주소를 캡슐화하기 때문에 L2와 L3 사이에 있는 프로토콜로 묘사하기도 한다. 어쨋거나 ARP는 OSI 프레임워크에서 개발하는 프로토콜은 아니다.
+
+  [참고](https://www.joinc.co.kr/w/man/12/ARP)
+
+#### DHCP
+
+​	
