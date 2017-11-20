@@ -51,8 +51,15 @@
     - HTTP1.1에서 사용
 
 
-
 #### Cookie vs Session
+
+- Cookie 
+  - 저장위치 : 클라이언트
+  - 저장형식 : Text
+  - 크기 제한있음
+- Session
+  - 저장위치: 서버
+  - 저장형식: Object형식
 
 
 
