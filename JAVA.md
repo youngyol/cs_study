@@ -117,7 +117,7 @@ s3은 heap 메모리에 개별 객체가 만들어짐<br/>
 
    ② Overriding (method 재정의)
 
->   상위 클래스에 있는 method와 똑같은 method를하위 클래스에 다시 만들기.<br/> 즉 하위 클래스에서 method를 재정의하는 것.<br/>​ 주로 생성자 method를 정의할 때 많이 사용. <br/>
+> ​  상위 클래스에 있는 method와 똑같은 method를하위 클래스에 다시 만들기.<br/> 즉 하위 클래스에서 method를 재정의하는 것.<br/> 주로 생성자 method를 정의할 때 많이 사용. <br/>
 
 
 
@@ -219,13 +219,30 @@ public class GenericDemo {
 
 
 
-#### Comparator와 Comparable
+#### Comparator
 
-- Comparator :  
+> 컬렉션에서 정렬을 행하는 비교함수, Comparator를 sort method에 건네면 sorting순서를 정확히 제어 가능
+> 또한 comparator를 사용하면 TreeSet ,TreeMap구조의 순서 역시 정렬가능
 
-- Comparable :
+```
+public int compare(Object  o1, Object  o2)
+```
 
-  ​
+> **파라미터:**
+>
+> `o1` - 비교 대상의 최초의 오브젝트
+>
+> `o2` - 비교 대상의 2 번째의 오브젝트
+>
+> **반환값:**
+>
+> 최초의 인수가 2 번째의 인수보다 작은 경우는 부의 정수, 양쪽 모두가 동일한 경우는 0, 최초의 인수가 2 번째의 인수보다 큰 경우는 정의 정수
+>
+> **예외:**
+>
+> `ClassCastException `- 인수의 형태가 이 콤퍼레이터에 의한 비교를 방해하는 경우
+
+​
 
 #### Thread
 
@@ -330,6 +347,24 @@ Runnable 인터페이스는 run 메소드를 구현하도록 강제한다.
 [더보기](https://wikidocs.net/230)
 
 <br/>
+
+- thread관련 에러
+
+```java
+public class Main {
+  public static void main(String[] args){ 
+		Thread t = new Thread(new foo());
+		t.start();  
+		t.start();  // 이미 생성된 thread를 다시 호출하면 IllegalThreadStateException발생
+	}
+}
+ class foo implements Runnable{
+ 	@Override
+ 	public void run() {
+ 		System.out.print("Efoo");
+    }
+ }
+```
 
 
 
