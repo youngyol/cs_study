@@ -187,7 +187,8 @@ Young과 Old영역 존재
     - 추가한 순서대로 순서보장
 - Map : 인터페이스, 중복된 키를 포함하지 않음, Key-value페어, Map으로 구현한것 (HashMap, TreeMap, LinkedHashMap)
   - HashMap
-  - TreeMap
+  - TreeMap 
+    - 순서가 보장(오름차순, 내림차순 등으로 정렬된 순서를 말하는 것, 삽입순서가 아니라 )
   - LinkedHashMap<br/><br/>
 
 #### 제네릭스(Generics)란?
