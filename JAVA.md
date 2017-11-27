@@ -426,3 +426,50 @@ public class Main {
 - DIP(The Dependency Inversion Principle) : 의존관계 역전 원칙  
 
 <br/>
+
+
+
+#### Singleton
+
+- 클래스의 메서드가 호출 될 때 생성하기
+
+```java
+public class Singleton {
+    
+    private static Singleton singleton;
+    
+    public static synchronized Singleton getInstance(){
+        if(singleton == null){
+            singleton = new Singleton();
+        }
+        return singleton;
+    }
+    private Singleton(){}
+}
+
+```
+
+위와 같이 하면, 좋은 코드라고 생각할 수 있겠다. 메소드 영역에 static 변수가 자리 잡는 시간은 최초 호출시라는 점을 잘 이용했다. 하지만 이 것은 좋지 않은 코드라고 한다. 매 getInstance()호출시마다 synchronized 동기화 문제로 비용을 치뤄야 하기 때문이다. 이러한 단점을 완화하기 위해 DCL이 고안되었다. 
+
+
+
+- 더블 체크드 락킹(Double Checked Locking)
+
+```java
+public class Singleton {
+ 
+    private volatile static Singleton singleton;
+    
+    public static Singleton getInstance(){
+        if(singleton == null){
+            synchronized (Singleton.class) {
+                singleton = new Singleton();
+            }
+        }
+        return singleton;
+    }
+    private Singleton(){}
+}
+```
+
+사용하는 이유는 늦은 초기화이다. 
