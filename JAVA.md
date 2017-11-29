@@ -473,3 +473,11 @@ public class Singleton {
 ```
 
 사용하는 이유는 늦은 초기화이다. 
+
+
+
+#### 메모리구조
+
+- Method area : static
+- Stack : 지역변수, 원시타입
+- Heap : 참조타입
