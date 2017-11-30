@@ -105,3 +105,12 @@
 #### DHCP
 
 ​	
+
+
+
+
+
+####  100만개의 글(documents)이 있는 게시판에서 User가  “Buying a Home” 이라고 검색을 효율적으로 하려면?
+
+- 역색인( inverted index)
+  - ​
