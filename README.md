@@ -1,1 +1,1 @@
-# cs_study
+# study
